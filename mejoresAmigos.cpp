@@ -23,12 +23,13 @@ public:
     agregar parámetros necesarios para poder recibir una Persona en específico
     y asignarla como mejor amigo. 
     */
-    void asignarMejorAmigo(...);
+    void asignarMejorAmigo(Persona &p);
     
 };
 
 int main()
 {
+    Persona p(29, "MArio"), p2(3, "Taro");
 
     return 0;
 }
@@ -48,6 +49,11 @@ Persona::Persona(int edad, string nombre)
 int Persona::getEdad()
 {
     return this->edad;
+}
+
+void Persona::asignarMejorAmigo(...)
+{
+
 }
 
 /*
